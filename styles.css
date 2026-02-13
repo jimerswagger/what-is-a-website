@@ -1,0 +1,17 @@
+.flexbox-container {
+    display: flex; /* This is a block display type so it breaks a new line for every new element with this class */
+    margin: 10px 20px;
+}
+
+.flexbox-container div { /* this styling affects every 'div' element found within a 'flexbox-container' */
+    box-sizing: border-box;
+    border: 2px black;
+    background: pink;
+    height: 200px;
+    width: 200px;
+    flex: 1;
+}
+
+h1 {
+    text-align: center;
+}
