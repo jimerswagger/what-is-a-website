@@ -4,7 +4,6 @@
 }
 
 .flexbox-container div { /* this styling affects every 'div' element found within a 'flexbox-container' */
-    box-sizing: border-box;
     border: 2px black;
     background: pink;
     height: 200px;
