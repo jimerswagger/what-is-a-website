@@ -4,10 +4,11 @@
 }
 
 .flexbox-container div { /* this styling affects every 'div' element found within a 'flexbox-container' */
+    box-sizing: border-box;
     border: 5px black;
-    background-color: white;
-    height: 500px;
-    width: 180px;
+    /* background-color: white; */
+    height: auto; 
+    width: 200px;
     margin: 0 5px;
     flex: 1;
 }
@@ -16,6 +17,14 @@ h1 {
     text-align: center;
 }
 
-/* .html {
-    background-color: orange;
-} */
+.html {
+    background-color: rgb(236, 98, 49);
+}
+
+.css {
+    background-color: rgb(0, 116, 217);
+}
+
+.javascript {
+    background-color: #f0db4f;
+}

@@ -17,13 +17,29 @@
     <h1>The Big 3 of Web Dev</h1> <!--Make this a cool techy font-->
 
     <div class="flexbox-container">
-        <div class="html"><img src="./images/Jade_Goober.png" style="height: auto; width: 100%;" alt="girl with green dyed black hair looking up with big eyes"></div>
-        <div class="css">2</div>
-        <div class="javascript">3</div>
-        <!--These should be three columns but that are not working for some reason-->
+        <div class="html">
+            <h1>HTML</h1>
+            <img src="./images/Jade_Goober.png" style="height: auto; width: 100%;" alt="girl with green dyed black hair looking up with big eyes">
+            <!--width 100% means we want the width of this image to fit 100% of the width available in our current container (flex item, which is 200px wide)-->
+            <!--height: auto then automatically calculates the total amount of height that fits in the space available based on the parent container (flex item again lol)-->
+        </div>
+        <div class="css">
+            <h1>CSS</h1>
+            <img src="./images/Jade_Goober.png" style="height: auto; width: 100%;" alt="girl with green dyed black hair looking up with big eyes">
+        </div>
+        <div class="javascript">
+            <h1>JavaScript</h1>
+            <img src="./images/Jade_Goober.png" style="height: auto; width: 100%;" alt="girl with green dyed black hair looking up with big eyes">
+        </div>
     </div>
 
-    <p>Yo</p>
+    <!-- <h2>This shows up in the middle of the pictures because each flex item, divs in this case, 
+        are of 150px height right now, which means the end of each flex item (div) is 'behind' the image,
+        and headers are block elements so it'll go to the next line 
+        after the end of the last block element which was div that has its end behind the image</h2> -->
+
+        <h2>I like my boxes flexed</h2>
+
 </body>
 
 
