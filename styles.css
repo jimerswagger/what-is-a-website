@@ -7,7 +7,7 @@
     box-sizing: border-box;
     border: 5px black;
     /* background-color: white; */
-    height: auto; 
+    height: auto;
     width: 200px;
     margin: 0 5px;
     flex: 1;
