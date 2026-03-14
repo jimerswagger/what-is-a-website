@@ -5,10 +5,47 @@
 <head>
     <title>CSS</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles.css">
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        /* * {
+            border: 1px solid red;
+        } */
+    </style>
 </head>
 
 <body>
-    <h1>CSS woah</h1>
+    <h1>CSS</h1>
+
+    <h2 style="background-color: aqua; border: 3px solid yellow">Stylizing the page elements :D</h2>
+
+    <h2>The Box Model</h2>
+    <button onclick="toggleBoxes()">Toggle Visible Boxes</button>
+    <p id="status">Boxes Invisible</p>
+
+    <script>
+        function toggleBoxes() {
+            document.getElementById("status").innerHTML = "Boxes Visible! (coming soon)"
+        }
+    </script>
+
+    <ul>
+        <li>How content is visually displayed. Everything on a webpage is inside of a box!</li>
+        <li>There are 4 properties in the box model: </li>
+        <ul>
+            <li>Content</li>
+            <li>Padding</li>
+            <li>Border</li>
+            <li>Margin</li>
+        </ul>
+    </ul>
+    
+    <p>The actual box model visual representation will go here with a bunch of styled divs</p>
+
+    
 </body>
 
 </html>

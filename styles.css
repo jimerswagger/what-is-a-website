@@ -28,3 +28,7 @@ h1 {
 .javascript {
     background-color: #f0db4f;
 }
+
+div {
+    border-color: red;
+}
