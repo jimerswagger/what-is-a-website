@@ -46,18 +46,16 @@
     <!-- <p>The actual box model visual representation will go here with a bunch of styled divs</p> -->
     
     <!--margin: 0 auto means that the top and bottom margins at set to 0, while left and right margins are automatically calculated-->
-    <div class="margin"> <!--margin box-->
-        <div class="border"> <!--border box-->
-            <div class="padding"> <!--padding box-->
-                <div class="content">
+    <div class="boxmodel-flexbox margin"> <!--margin box-->
+        <div class="boxmodel-flexbox border"> <!--border box-->
+            <div class="boxmodel-flexbox padding"> <!--padding box-->
+                <div class="boxmodel-flexbox content"> <!--content box-->
                     <p>Content</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--Next, try to fix this up into proper classes labeled by the property they represent in the box model-->
-    <!--And then figure out how to vertically align these things-->
     <!--Touch up the colors so its like the chromium web dev tools-->
     <!--Complete these tasks ^ in order-->
 

@@ -34,33 +34,35 @@ div {
     border-color: black;
 }
 
-.margin {
+.boxmodel-flexbox { /* flexbox container for this specific visual */
     border-style: solid;
     margin: 0 auto; /* for horizontal centering */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+/* video used for the flexbox approach to centering divs */
+
+.margin {
     background: goldenrod; 
     height: 300px; 
     width: 400px;
 }
 
 .border {
-    border-style: solid;
-    margin: 0 auto; 
     background: purple; 
     height: 250px; 
     width: 350px;
 }
 
-.padding {
-    border-style: solid;
-    margin: 0 auto; 
+.padding { 
     background: lightgreen; 
     height: 200px; 
     width: 300px;
 }
 
 .content {
-    border-style: solid;
-    margin: 0 auto; 
     background: red; 
     height: 150px; 
     width: 250px;
