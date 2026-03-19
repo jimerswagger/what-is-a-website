@@ -45,25 +45,25 @@ div {
 /* video used for the flexbox approach to centering divs */
 
 .margin {
-    background: goldenrod; 
+    background: #F6B26B; 
     height: 300px; 
     width: 400px;
 }
 
 .border {
-    background: purple; 
+    background: #FFE599; 
     height: 250px; 
     width: 350px;
 }
 
 .padding { 
-    background: lightgreen; 
+    background: #93C47D; 
     height: 200px; 
     width: 300px;
 }
 
 .content {
-    background: red; 
+    background: #6FA8DC; 
     height: 150px; 
     width: 250px;
 }
