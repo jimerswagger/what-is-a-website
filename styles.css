@@ -30,5 +30,6 @@ h1 {
 }
 
 div {
-    border-color: red;
+    border-style: solid;
+    border-color: black;
 }
