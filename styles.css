@@ -36,4 +36,32 @@ div {
 
 .margin {
     border-style: solid;
+    margin: 0 auto; /* for horizontal centering */
+    background: goldenrod; 
+    height: 300px; 
+    width: 400px;
+}
+
+.border {
+    border-style: solid;
+    margin: 0 auto; 
+    background: purple; 
+    height: 250px; 
+    width: 350px;
+}
+
+.padding {
+    border-style: solid;
+    margin: 0 auto; 
+    background: lightgreen; 
+    height: 200px; 
+    width: 300px;
+}
+
+.content {
+    border-style: solid;
+    margin: 0 auto; 
+    background: red; 
+    height: 150px; 
+    width: 250px;
 }
