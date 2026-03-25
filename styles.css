@@ -23,6 +23,7 @@ h1 {
 .css {
     border-style: solid;
     background-color: rgb(0, 116, 217);
+    /* flex-shrink: 2; */
 }
 
 .javascript {
@@ -34,7 +35,7 @@ div {
     border-color: black;
 }
 
-.boxmodel-flexbox { /* flexbox container for this specific visual */
+.boxmodel-flexbox { /* flexbox container for this specific box model visual */
     border-style: solid;
     margin: 0 auto; /* for horizontal centering */
     display: flex;
