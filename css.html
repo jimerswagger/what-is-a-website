@@ -36,7 +36,7 @@
         <li>How content is visually displayed. Everything on a webpage is inside of a box!</li>
         <li>There are 4 properties in the box model: </li>
         <ul>
-            <li>Content</li>
+            <li>Content</li> <!--In the future, have it so that hovering over these properties will light up / highlight the appropriate box in the box model visual-->
             <li>Padding</li>
             <li>Border</li>
             <li>Margin</li>
@@ -47,14 +47,18 @@
     
     <!--margin: 0 auto means that the top and bottom margins at set to 0, while left and right margins are automatically calculated-->
     <!--We're making each div here be a flexbox container-->
-    <div class="boxmodel-flexbox margin"> <!--margin box-->
-        <div class="boxmodel-flexbox border"> <!--border box-->
-            <div class="boxmodel-flexbox padding"> <!--padding box-->
-                <div class="boxmodel-flexbox content"> <!--content box-->
+
+    <div class="boxmodel-flexbox margin" style="flex-direction: column;"> <!--margin box-->
+        <div class="boxmodel-flexbox border" style="flex-direction: column;"> <!--border box-->
+            <div class="boxmodel-flexbox padding" style="flex-direction: column;"> <!--padding box-->
+                <div class="boxmodel-flexbox content" style="flex-direction: column;"> <!--content box-->
                     <p>Content</p>
                 </div>
+                <p>Padding</p>
             </div>
+            <p>Border</p>
         </div>
+        <p>Margin</p>
     </div>
 
     <!--Touch up the colors so its like the chromium web dev tools-->
