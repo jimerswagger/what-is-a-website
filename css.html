@@ -48,17 +48,17 @@
     <!--margin: 0 auto means that the top and bottom margins at set to 0, while left and right margins are automatically calculated-->
     <!--We're making each div here be a flexbox container-->
 
-    <div class="boxmodel-flexbox margin" style="flex-direction: column;"> <!--margin box-->
-        <div class="boxmodel-flexbox border" style="flex-direction: column;"> <!--border box-->
-            <div class="boxmodel-flexbox padding" style="flex-direction: column;"> <!--padding box-->
+    <div class="boxmodel-flexbox margin" style="flex-direction: column; padding-top: 50px;"> <!--margin box-->
+        <div class="boxmodel-flexbox border" style="flex-direction: column; padding-top: 40px;"> <!--border box-->
+            <div class="boxmodel-flexbox padding" style="flex-direction: column; padding-top: 30px;"> <!--padding box-->
                 <div class="boxmodel-flexbox content" style="flex-direction: column;"> <!--content box-->
                     <p>Content</p>
                 </div>
-                <p>Padding</p>
+                <p style="margin-top: 10px; margin-bottom: 10px;">Padding</p>
             </div>
-            <p>Border</p>
+            <p style="padding-bottom: 0px; margin-top: 9px;">Border</p>
         </div>
-        <p>Margin</p>
+        <p style="margin-top: 0px;margin-bottom: 5px; padding-bottom: 25px; padding-top: 6px;">Margin</p>
     </div>
 
     
