@@ -20,7 +20,7 @@
 <body>
     <h1>CSS - (Cascading Style Sheet)</h1>
 
-    <h2 style="background-color: aqua; border: 3px solid yellow">Stylizing the page elements :D</h2>
+    <h2 style="background-color: aqua; border: 3px solid yellow;">Stylizing the page elements :D</h2>
 
     <h2>The Box Model</h2>
     <button onclick="toggleBoxes()">Toggle Visible Boxes</button>
@@ -43,9 +43,8 @@
         </ul>
     </ul>
     
-    <!-- <p>The actual box model visual representation will go here with a bunch of styled divs</p> -->
     
-    <!--margin: 0 auto means that the top and bottom margins at set to 0, while left and right margins are automatically calculated-->
+    <!--'margin: 0 auto' means that the top and bottom margins at set to 0, while left and right margins are automatically calculated-->
     <!--We're making each div here be a flexbox container-->
 
     <div class="boxmodel-flexbox margin" style="flex-direction: column; padding-top: 50px;"> <!--margin box-->
@@ -61,6 +60,36 @@
         <p style="margin-top: 0px;margin-bottom: 5px; padding-bottom: 25px; padding-top: 6px;">Margin</p>
     </div>
 
+    <!--A future version wil be an interactable box model where the values of each property can be changed. But this is probably super advanced and something I'm not even sure is possible with just Javascript, but we'll see.-->
+    <!--And in the future, have some kind of toggle to show an even more comprehensible analogy for how the box model works.-->
+    <!--Content is the item you are sending inside of a package to then send over mail-->
+    <!--Padding is exactly padding this analogy, packing peanuts that are added as needed to fill in the space inside this cardboard box. Although this might fall apart when padding is set to be super big. For border-box, the content will shrink to accomodate the padding value if it exceeds the width of the parent container-->
+    <!--Border is the thickness of this cardboard box-->
+    <!--Margin is a little harder to convey in this, but maybe just say there's like an invisible force (like magnetism) on the outside of the box that says how far away this cardboard box is from other cardboard boxes-->
+
+    <!-- <div class="flexbox-container">
+    Do the flexbox in the next commit
+    </div> -->
+
+    <h2>Content</h2>
+    <ul>
+        <li>The width and height size of a piece of content</li>
+        <ul>
+            <li>Examples: images, text, video, etc</li>
+        </ul>
+    </ul>
+
+    <h2>Padding</h2>
+    <ul>
+        <li>The space in between the content and the edges of the box (borders)</li>
+        <li>Visualize it like mailing an item in a package</li>
+        <ul>
+            <li>You have a cardboard box of a specific size (certain length, certain width)</li>
+            <li>The item to mail is your content (Ex: Wireless Earbuds)</li>
+            <li>Padding (if you choose) fills in the space inside of the cardboard box, around the wireless earbuds (content)</li>
+        </ul>
+        <li>Put a picture here of the cardboard box visual</li>
+    </ul>
     
 </body>
 
