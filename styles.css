@@ -1,12 +1,12 @@
 .flexbox-container {
     display: flex; /* This is a block display type so it breaks a new line for every new element with this class */
     margin: 10px 20px;
+    border-style: none;
 }
 
 .flexbox-container div { /* this styling affects every 'div' element found within a 'flexbox-container' */
     box-sizing: border-box;
     height: auto;
-    width: 200px;
     margin: 0 5px;
     flex: 1;
 }
@@ -16,34 +16,29 @@ h1 {
 }
 
 .html {
-    border-style: solid;
     background-color: rgb(236, 98, 49);
 }
 
 .css {
-    border-style: solid;
     background-color: rgb(0, 116, 217);
     /* flex-shrink: 2; */
 }
 
 .javascript {
-    border-style: solid;
     background-color: #f0db4f;
 }
 
 div {
-    border-color: black;
+    border: 3px solid black; 
+    /* you can define the border-style and thickness here because it would make a black border around every 'div', which includes parent containers that don't necessarily need borders */
 }
 
 .boxmodel-flexbox { /* flexbox container for this specific box model visual */
-    border-style: solid;
     margin: 0 auto; /* for horizontal centering */
     display: flex;
     justify-content: center; 
     align-items: center;
 }
-
-/* video used for the flexbox approach to centering divs */
 
 .margin {
     background: #F6B26B; 
