@@ -20,7 +20,7 @@
 <body>
     <h1>CSS - (Cascading Style Sheet)</h1>
 
-    <h2 style="background-color: aqua; border: 3px solid yellow;">Stylizing the page elements :D</h2>
+    <h2 style="background-color: aqua; border: 3px solid yellow;">Now we can style the page elements :D</h2>
 
     <h2>The Box Model</h2>
     <button onclick="toggleBoxes()">Toggle Visible Boxes</button>
@@ -33,14 +33,16 @@
     </script>
 
     <ul>
-        <li>How content is visually displayed. Everything on a webpage is inside of a box!</li>
+        <li>The Box Model is how content is visually displayed on a website. This means that EVERYTHING you see is inside of a box!</li>
         <li>There are 4 properties in the box model: </li>
-        <ul>
-            <li>Content</li> <!--In the future, have it so that hovering over these properties will light up / highlight the appropriate box in the box model visual-->
+        <!-- <ul>
+            
+            <li>Content</li> 
             <li>Padding</li>
             <li>Border</li>
             <li>Margin</li>
-        </ul>
+        </ul> -->
+        <!--In the future, have it so that hovering over these properties will light up / highlight the appropriate box in the box model visual-->
     </ul>
     
     
@@ -69,30 +71,51 @@
 
     <div class="flexbox-container">
 
-    <div style="background-color: aquamarine;">
-    <h2>Content</h2>
-    <ul>
-        <li>The width and height size of a piece of content</li>
+    <div class="content">
+        <h2>Content</h2>
         <ul>
-            <li>Examples: images, text, video, etc</li>
+            <li>The width and height size of a piece of content</li>
+            <ul>
+                <li>Examples: images, text, video, etc</li>
+            </ul>
         </ul>
-    </ul>
     </div>
 
-    <div style="background-color: beige;">
-    <h2>Padding</h2>
-    <ul>
-        <li>The space in between the content and the edges of the box (borders)</li>
-        <li>Visualize it like mailing an item in a package</li>
+    <div class="padding">
+        <h2>Padding</h2>
         <ul>
-            <li>You have a cardboard box of a specific size (certain length, certain width)</li>
-            <li>The item to mail is your content (Ex: Wireless Earbuds)</li>
-            <li>Padding (if you choose) fills in the space inside of the cardboard box, around the wireless earbuds (content)</li>
+            <li>The space in between the content and the edges of the box (borders)</li>
+            <li>Visualize it like mailing an item in a package</li>
+            <ul>
+                <li>You have a cardboard box of a specific size (certain length, certain width)</li>
+                <li>The item to mail is your content (Ex: Wireless Earbuds)</li>
+                <li>Padding (if you choose to add it) fills in the space inside of the cardboard box, around the wireless earbuds (content)</li>
+            </ul>
+            <li>Put a picture here of the cardboard box visual</li>
         </ul>
-        <li>Put a picture here of the cardboard box visual</li>
-    </ul>
     </div>
 
+    <div class="border">
+        <h2>Border</h2>
+        <ul>
+            <li>It's pretty much what it sounds like</li>
+            <li>In CSS, the main three things you can change is the border color, style and thickness</li>
+            <ul>
+                <li>Examples: Dotted, Solid, 3px, 10px, and any other color you can think of</li>
+            </ul>
+        </ul>
+    </div>
+
+    <div class="margin">
+        <h2>Margin</h2>
+        <ul>
+            <li>A space you specify that determine how far away OTHER elements on a page are</li>
+            <li>Imagine there's like an invisible force that pushes other elements away a certain amount lol</li>
+        </ul>
+    </div>
+    
+
+    <!--End of flexbox box model properties info things-->
     </div>
     
 </body>
