@@ -18,32 +18,32 @@
 </head>
 
 <body>
-    <h1>CSS - (Cascading Style Sheet)</h1>
+    <h1>CSS - (<span style="color: rgb(24, 133, 235);">C</span>ascading <span style="color: rgb(24, 133, 235);">S</span>tyle <span style="color: rgb(24, 133, 235);">S</span>heet)</h1>
 
-    <h2 style="background-color: aqua; border: 3px solid yellow;">Now we can style the page elements :D</h2>
+    <div class="flexbox-container" style="justify-content: space-between; align-items: center; gap: 4px;">
 
-    <h2>The Box Model</h2>
-    <button onclick="toggleBoxes()">Toggle Visible Boxes</button>
-    <p id="status">Boxes Invisible</p>
+        <div style="border-style: none; flex: 2 1 0;"><h3 class="concept-title">Now we can make things look more interesting >:3</h3></div>
 
-    <script>
-        function toggleBoxes() {
-            document.getElementById("status").innerHTML = "Boxes Visible! (coming soon)"
-        }
-    </script>
+        <div style="border-style: none; flex: 2 1 0;"><h3 class="concept-title">And it's all possible by manipulating the properties of...</h3></div>
 
-    <ul>
-        <li>The Box Model is how content is visually displayed on a website. This means that EVERYTHING you see is inside of a box!</li>
-        <li>There are 4 properties in the box model: </li>
-        <!-- <ul>
-            
-            <li>Content</li> 
-            <li>Padding</li>
-            <li>Border</li>
-            <li>Margin</li>
-        </ul> -->
-        <!--In the future, have it so that hovering over these properties will light up / highlight the appropriate box in the box model visual-->
-    </ul>
+        <div style="border-style: none; text-align: right;">
+        <button onclick="toggleBoxes()">Toggle Visible Boxes</button>
+        <p style="font-size: 17px;" id="status">"Boxes Invisible"</p>
+
+        <script>
+            function toggleBoxes() {
+                document.getElementById("status").innerHTML = "Boxes Visible! (coming soon)"
+            }
+        </script>
+
+        </div>
+
+    </div>
+
+    <h2 class="concept-title">The Box Model</h2>
+
+    <p>The Box Model is how content is visually displayed and structured on a website. This means that EVERYTHING you see is inside of a box!</p>
+    <p>There are 4 properties in the Box Model: </p>
     
     
     <!--'margin: 0 auto' means that the top and bottom margins at set to 0, while left and right margins are automatically calculated-->
@@ -69,7 +69,7 @@
     <!--Border is the thickness of this cardboard box-->
     <!--Margin is a little harder to convey in this, but maybe just say there's like an invisible force (like magnetism) on the outside of the box that says how far away this cardboard box is from other cardboard boxes-->
 
-    <div class="flexbox-container">
+    <div class="flexbox-container box-model-info">
 
     <div class="content">
         <h2>Content</h2>
