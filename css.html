@@ -40,7 +40,8 @@
 
     </div>
 
-    <h2 class="concept-title">The Box Model</h2>
+    <!--h2 + 'concept-title' class is how new concept title sections will look-->
+    <h2 class="concept-title">|__ The Box Model __|</h2>
 
     <p>The Box Model is how content is visually displayed and structured on a website. This means that EVERYTHING you see is inside of a box!</p>
     <p>There are 4 properties in the Box Model: </p>
@@ -48,6 +49,7 @@
     
     <!--'margin: 0 auto' means that the top and bottom margins at set to 0, while left and right margins are automatically calculated-->
     <!--We're making each div here be a flexbox container-->
+    <!--Flex Box Model Visual Start-->
 
     <div class="boxmodel-flexbox margin" style="flex-direction: column; padding-top: 50px;"> <!--margin box-->
         <div class="boxmodel-flexbox border" style="flex-direction: column; padding-top: 40px;"> <!--border box-->
@@ -62,6 +64,8 @@
         <p style="margin-top: 0px;margin-bottom: 5px; padding-bottom: 25px; padding-top: 6px;">Margin</p>
     </div>
 
+    <!--Flex Box Model Visual End-->
+
     <!--A future version wil be an interactable box model where the values of each property can be changed. But this is probably super advanced and something I'm not even sure is possible with just Javascript, but we'll see.-->
     <!--And in the future, have some kind of toggle to show an even more comprehensible analogy for how the box model works.-->
     <!--Content is the item you are sending inside of a package to then send over mail-->
@@ -69,54 +73,91 @@
     <!--Border is the thickness of this cardboard box-->
     <!--Margin is a little harder to convey in this, but maybe just say there's like an invisible force (like magnetism) on the outside of the box that says how far away this cardboard box is from other cardboard boxes-->
 
+    <!--Start of flexbox box model properties info things (needs a good font)-->
     <div class="flexbox-container box-model-info">
 
-    <div class="content">
-        <h2>Content</h2>
-        <ul>
-            <li>The width and height size of a piece of content</li>
+        <div class="content">
+            <h2>Content</h2>
             <ul>
-                <li>Examples: images, text, video, etc</li>
+                <li>The width and height size of a piece of content</li>
+                <ul>
+                    <li>Examples: images, text, video, etc</li>
+                </ul>
             </ul>
-        </ul>
-    </div>
+        </div>
 
-    <div class="padding">
-        <h2>Padding</h2>
-        <ul>
-            <li>The space in between the content and the edges of the box (borders)</li>
-            <li>Visualize it like mailing an item in a package</li>
+        <div class="padding">
+            <h2>Padding</h2>
             <ul>
-                <li>You have a cardboard box of a specific size (certain length, certain width)</li>
-                <li>The item to mail is your content (Ex: Wireless Earbuds)</li>
-                <li>Padding (if you choose to add it) fills in the space inside of the cardboard box, around the wireless earbuds (content)</li>
+                <li>The space in between the content and the edges of the box (borders)</li>
+                <li>Visualize it like mailing an item in a package</li>
+                <ul>
+                    <li>You have a cardboard box of a specific size (certain length, certain width)</li>
+                    <li>The item to mail is your content (Ex: Wireless Earbuds)</li>
+                    <li>Padding (if you choose to add it) fills in the space inside of the cardboard box, around the wireless earbuds (content)</li>
+                </ul>
+                <li>Put a picture here of the cardboard box visual</li>
             </ul>
-            <li>Put a picture here of the cardboard box visual</li>
-        </ul>
-    </div>
+        </div>
 
-    <div class="border">
-        <h2>Border</h2>
-        <ul>
-            <li>It's pretty much what it sounds like</li>
-            <li>In CSS, the main three things you can change is the border color, style and thickness</li>
+        <div class="border">
+            <h2>Border</h2>
             <ul>
-                <li>Examples: Dotted, Solid, 3px, 10px, and any other color you can think of</li>
+                <li>It's pretty much what it sounds like</li>
+                <li>In CSS, the main three things you can change is the border color, style and thickness</li>
+                <ul>
+                    <li>Examples: Dotted, Solid, 3px, 10px, and any other color you can think of</li>
+                </ul>
             </ul>
-        </ul>
-    </div>
+        </div>
 
-    <div class="margin">
-        <h2>Margin</h2>
-        <ul>
-            <li>A space you specify that determine how far away OTHER elements on a page are</li>
-            <li>Imagine there's like an invisible force that pushes other elements away a certain amount lol</li>
-        </ul>
-    </div>
+        <div class="margin">
+            <h2>Margin</h2>
+            <ul>
+                <li>A space you specify that determine how far away OTHER elements on a page are</li>
+                <li>Imagine there's like an invisible force that pushes other elements away a certain amount lol</li>
+            </ul>
+        </div>
     
-
-    <!--End of flexbox box model properties info things-->
     </div>
+    <!--End of flexbox box model properties info things-->
+
+    <br>
+
+    <h2 class="concept-title">{- . Classes . -}</h2>
+
+    <p>CSS Classes are a way to apply multiple style properties (ex: font size, color, text alignment) to any element on a website.</p>
+    <!--Flexbox to have two different, not too wide, flex items. 
+    The first flex item for HTML, colored light orange, showing how to apply a class to an element in code. 
+    The second flex item for CSS, showing how the .class selector is what defines a class, populates a class with the desired properties-->
+    
+    <div class="flexbox-container">
+        <div class="html" style="padding-left: 5px;">
+            <p><strong>Applied to elements in HTML:</strong></p>
+            <p>&lt; p class="add-black-border"&gt; Thanks for the border &lt; /p &gt;</p>
+        </div>
+        <div style="background-color: rgb(24, 133, 235); padding-left: 5px;">
+            <p><strong>Defined by .class selector in CSS:</strong></p>
+            <p>.add-black-border {</p>
+            <p>border: 3px solid black;</p>
+            <p>}</p>
+        </div>
+    </div>
+
+    <h2>Result:</h2>
+
+    <p style="border: 3px solid black;">Thanks for the border</p>
+
+    <!--Maybe do a side note to talk about 'div' and 'span' being HTML elements that don't do anything in pure html without css, and are made with the purpose to be used as containers-->
+    <!--Depending on how a class is applied, if applied to an element just like rawlly, it will stretch across the entire line as a block level element would. But put a property like border in a span and it'll only cover the text content-->
+    <!-- <p><span style="border: 3px solid black;">Thanks for the border</span></p> -->
+
+    <!--Also for now, this link will take you back to the home page-->
+    <!--But in the future it will be some kind of expandable pop-up containing the side note I explained earlier-->
+    <h4><a href="index.html">Why is the border so wide?</a></h4>
+
+    <!--Consider adding the different types of class selectors like in-line and chain and all that-->
+
 
     <a href="index.html">Home</a>
     
