@@ -134,19 +134,26 @@
     <div class="flexbox-container">
         <div class="html" style="padding-left: 5px;">
             <p><strong>Applied to elements in HTML:</strong></p>
-            <p>&lt; p class="add-black-border"&gt; Thanks for the border &lt; /p &gt;</p>
+            <p>&lt; p &gt; This is what text looks like normally. For reference :3 &lt; /p &gt;</p>
+            <p>&lt; p class="blue-red-center"&gt; I'm blue in red border and centered &lt; /p &gt;</p>
         </div>
         <div style="background-color: rgb(24, 133, 235); padding-left: 5px;">
             <p><strong>Defined by .class selector in CSS:</strong></p>
-            <p>.add-black-border {</p>
-            <p>border: 3px solid black;</p>
+            <p>.blue-red-center {</p>
+            <p>border: 3px solid red;</p>
+            <p>color: blue;</p>
+            <p>text-align: center;</p>
             <p>}</p>
         </div>
     </div>
 
+    <div style="background-color: rgb(203, 203, 203);">
     <h2>Result:</h2>
 
-    <p style="border: 3px solid black;">Thanks for the border</p>
+    <p>This is what text looks like normally. For reference :3</p>
+    <p style="border: 3px solid red; color: blue; text-align: center;">I'm blue in red border and centered</p>
+
+    </div>
 
     <!--Maybe do a side note to talk about 'div' and 'span' being HTML elements that don't do anything in pure html without css, and are made with the purpose to be used as containers-->
     <!--Depending on how a class is applied, if applied to an element just like rawlly, it will stretch across the entire line as a block level element would. But put a property like border in a span and it'll only cover the text content-->
