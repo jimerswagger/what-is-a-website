@@ -4,9 +4,13 @@
     border-style: none;
 }
 
-.flexbox-container.box-model-info {
+.flexbox-container.concept-info{
     gap: 5px;
     justify-content: space-around;
+}
+
+.flexbox-container.concept-info div{
+    padding-left: 5px;
 }
 
 .flexbox-container div { /* this styling affects every 'div' element found within a 'flexbox-container' */
