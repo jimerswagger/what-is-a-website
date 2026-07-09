@@ -37,7 +37,6 @@
         </script>
 
         </div>
-
     </div>
 
     <!--h2 + 'concept-title' class is how new concept title sections will look-->
@@ -118,7 +117,6 @@
                 <li>Imagine there's like an invisible force that pushes other elements away a certain amount lol</li>
             </ul>
         </div>
-    
     </div>
     <!--End of flexbox box model properties info things-->
 
@@ -137,6 +135,7 @@
             <p>&lt; p &gt; Oh to be some digital text. &lt; /p &gt;</p>
             <p>&lt; p <span style="color: white;">class="blue-red-center" </span> &gt; Oh to be some digital text. &lt; /p &gt;</p>
         </div>
+
         <div style="background-color: rgb(24, 133, 235);">
             <p><strong><i>DEFINE</i> class(es) in CSS:</strong></p>
             <p><span style="color: white;">.blue-red-center </span> {</p>
@@ -147,12 +146,13 @@
         </div>
     </div>
 
-    <div style="background-color: rgb(203, 203, 203); padding-left: 5px;">
-    <h2>Result:</h2>
+    <div style="background-color: rgb(203, 203, 203);">
+        <h2 style="text-align: center;">Result</h2>
 
-    <p>Oh to be some digital text.</p>
-    <p style="border: 3px solid red; color: blue; text-align: center;">Oh to be some digital text.</p>
-
+        <div style="background-color: darkgray; padding-left: 5px;">
+            <p>Oh to be some digital text.</p>
+            <p style="border: 3px solid red; color: blue; text-align: center;">Oh to be some digital text.</p>
+        </div>
     </div>
 
     <!--Maybe do a side note to talk about 'div' and 'span' being HTML elements that don't do anything in pure html without css, and are made with the purpose to be used as containers-->
@@ -161,13 +161,25 @@
 
     <!--Also for now, this link will take you back to the home page-->
     <!--But in the future it will be some kind of expandable pop-up containing the side note I explained earlier-->
-    <h4><a href="index.html">Why is the border so wide?</a></h4>
+        <h4><a href="index.html">Why is the border so wide?</a></h4>
 
     <!--Consider adding the different types of ways to add properties like in-line, chain, id and all that-->
+    <!--Although that might be a bit too advanced for the purposes of this project-->
 
     <h2 class="concept-title">: : Display Types : :</h2>
     <p>The different ways an element(s) can be displayed <i>(wow very descriptive)</i></p>
-    <p>An element can be either:</p>
+
+    <div class="flexbox-container">
+        <div style="background-color: lightgray">
+            <p style="text-align: center;"><span style="border: 3px solid darkred; background-color: lightcoral;">A ____ element</span></p>
+    <!--Drag and drop the different display types into this paragraph text ^-->
+    <!--Inline is surrounded by CONTENT and the element's content can be changed by user (text)-->
+    <!--Block pushes all the CONTENT out of the way and takes over the entire line no matter the element's content-->
+    <!--Flex makes the current element into a flex container that can hold elements and lay them out in a flexible way, add the ability to add flex items (probably name them something simpler. Make it like [add child element] as like a button)-->
+        </div>
+    </div>
+
+    <div class="flexbox-container concept-info">
 
         <div>
         <p>Inline - Takes up only the horizontal space it needs on the page</p>
@@ -184,6 +196,7 @@
         <div>
         <p>Grid (when I get there)</p>
         </div>
+    </div>
 
 
 
