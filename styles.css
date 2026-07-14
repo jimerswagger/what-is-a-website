@@ -76,11 +76,16 @@ p {
 }
 
 .concept-title {
-    background-color: rgb(152, 206, 245); border: 3px solid white;
-}
-
-h2.concept-title {
     font-size: 35px;
     margin: 15px 0;
     text-align: center;
 }
+
+h2.concept-title.css {
+    background-color: rgb(152, 206, 245); border: 3px solid white;
+}
+
+h2.concept-title.js {
+    background-color: #FFE599; border: 3px solid black;
+}
+
