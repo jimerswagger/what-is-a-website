@@ -1,5 +1,5 @@
 .flexbox-container {
-    display: flex; /* This is a block display type so it breaks a new line for every new element with this class */
+    display: flex;
     margin: 10px 20px;
     border-style: none;
 }
@@ -9,9 +9,9 @@
     justify-content: space-around;
 }
 
-.flexbox-container.concept-info div{
+/* .flexbox-container.concept-info div{
     padding-left: 5px;
-}
+} */
 
 .flexbox-container div { /* this styling affects every 'div' element found within a 'flexbox-container' */
     box-sizing: border-box;
@@ -37,7 +37,10 @@ h1 {
 
 div {
     border: 3px solid black; 
-    /* you can define the border-style and thickness here because it would make a black border around every 'div', which includes parent containers that don't necessarily need borders */
+    /* you can define the border-style and thickness here because it would make a black border around every 'div', 
+    which includes parent containers that don't necessarily need borders */
+    /* Add the padding-left: 5px here to apply to all divs AHHHHHH */
+    padding-left: 5px;
 }
 
 .boxmodel-flexbox { /* flexbox container for this specific box model visual */
