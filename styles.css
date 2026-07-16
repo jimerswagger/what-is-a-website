@@ -40,7 +40,7 @@ div {
     /* you can define the border-style and thickness here because it would make a black border around every 'div', 
     which includes parent containers that don't necessarily need borders */
     /* Add the padding-left: 5px here to apply to all divs AHHHHHH */
-    padding-left: 5px;
+    padding: 5px 5px;
 }
 
 .boxmodel-flexbox { /* flexbox container for this specific box model visual */
