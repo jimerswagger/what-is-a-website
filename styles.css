@@ -19,10 +19,6 @@
     flex: 1;
 }
 
-h1 {
-    text-align: center;
-}
-
 .html {
     background-color: rgb(236, 98, 49);
 }
@@ -33,14 +29,6 @@ h1 {
 
 .javascript {
     background-color: #f0db4f;
-}
-
-div {
-    border: 3px solid black; 
-    /* you can define the border-style and thickness here because it would make a black border around every 'div', 
-    which includes parent containers that don't necessarily need borders */
-    /* Add the padding-left: 5px here to apply to all divs AHHHHHH */
-    padding: 5px 5px;
 }
 
 .boxmodel-flexbox { /* flexbox container for this specific box model visual */
@@ -74,10 +62,6 @@ div {
     width: 250px;
 }
 
-p {
-    font-size: 22px;
-}
-
 .concept-title {
     font-size: 35px;
     margin: 15px 0;
@@ -88,7 +72,23 @@ p {
     background-color: rgb(152, 206, 245); border: 3px solid white;
 } */
 
-h2.concept-title.js {
+/* h2.concept-title.js {
     background-color: #FFE599; border: 3px solid black;
+} */
+
+div {
+    border: 3px solid black; 
+    /* you can define the border-style and thickness here because it would make a black border around every 'div', 
+    which includes parent containers that don't necessarily need borders */
+    /* Add the padding-left: 5px here to apply to all divs AHHHHHH */
+    padding: 5px 5px;
+}
+
+p {
+    font-size: 22px;
+}
+
+h1 {
+    text-align: center;
 }
 
