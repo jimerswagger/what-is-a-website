@@ -18,195 +18,204 @@
 </head>
 
 <body>
-    <h1 style="font-size: 40px;">CSS</h1>
-    <h1>(<span style="color: rgb(24, 133, 235);">C</span>ascading <span style="color: rgb(24, 133, 235);">S</span>tyle <span style="color: rgb(24, 133, 235);">S</span>heet)</h1></h1>
 
-    <!-- <div class="flexbox-container" style="justify-content: space-between; align-items: center; gap: 4px;">
+    <div class="flexbox-container" style="flex-direction: column; justify-content: space-around; gap: 8px;">
 
-        <h3>Now this is where things get more interesting</h3>
-
-        <div style="border-style: none; text-align: right;">
-        <button onclick="toggleBoxes()">Toggle Visible Boxes</button>
-        <p style="font-size: 17px;" id="status">"Boxes Invisible"</p>
-
-        <script>
-            function toggleBoxes() {
-                document.getElementById("status").innerHTML = "Boxes Visible! (coming soon)"
-            }
-        </script>
-
+        <div>
+            <h1 style="font-size: 40px;">CSS</h1>
+            <h1>(<span style="color: rgb(24, 133, 235);">C</span>ascading <span style="color: rgb(24, 133, 235);">S</span>tyle <span style="color: rgb(24, 133, 235);">S</span>heet)</h1></h1>
         </div>
-    </div> -->
+        <!-- <div class="flexbox-container" style="justify-content: space-between; align-items: center; gap: 4px;">
 
-    <!--h2 + 'concept-title' class is how new concept title sections will look-->
-    <h2 class="concept-title">|__ The Box Model __|</h2>
+            <h3>Now this is where things get more interesting</h3>
 
-    <p>The Box Model is how content is visually displayed and structured on a website. This means that EVERYTHING you see is inside of a box!</p>
-    <p>There are 4 properties in the Box Model: </p>
-    
-    
-    <!--'margin: 0 auto' means that the top and bottom margins at set to 0, while left and right margins are automatically calculated-->
-    <!--We're making each div here be flex item that are also flexbox containers-->
-    <!--Flex Box Model Visual Start-->
+            <div style="border-style: none; text-align: right;">
+            <button onclick="toggleBoxes()">Toggle Visible Boxes</button>
+            <p style="font-size: 17px;" id="status">"Boxes Invisible"</p>
 
-    <div class="boxmodel-flexbox margin" style="flex-direction: column; padding-top: 50px;"> <!--margin box-->
-        <div class="boxmodel-flexbox border" style="flex-direction: column; padding-top: 40px;"> <!--border box-->
-            <div class="boxmodel-flexbox padding" style="flex-direction: column; padding-top: 30px;"> <!--padding box-->
-                <div class="boxmodel-flexbox content" style="flex-direction: column;"> <!--content box-->
-                    <p>Content</p>
+            <script>
+                function toggleBoxes() {
+                    document.getElementById("status").innerHTML = "Boxes Visible! (coming soon)"
+                }
+            </script>
+
+            </div>
+        </div> -->
+        
+        <div>
+            <h2 class="concept-title">|__ The Box Model __|</h2>
+
+            <p>The Box Model is how content is visually displayed and structured on a website. This means that EVERYTHING you see is inside of a box!</p>
+            <p>There are 4 properties in the Box Model: </p>
+            
+            
+            <!--'margin: 0 auto' means that the top and bottom margins at set to 0, while left and right margins are automatically calculated-->
+            <!--We're making each div here be flex item that are also flexbox containers-->
+            <!--Flex Box Model Visual Start-->
+
+            <div class="boxmodel-flexbox margin" style="flex-direction: column; padding-top: 50px;"> <!--margin box-->
+                <div class="boxmodel-flexbox border" style="flex-direction: column; padding-top: 40px;"> <!--border box-->
+                    <div class="boxmodel-flexbox padding" style="flex-direction: column; padding-top: 30px;"> <!--padding box-->
+                        <div class="boxmodel-flexbox content" style="flex-direction: column;"> <!--content box-->
+                            <p>Content</p>
+                        </div>
+                        <p style="margin-top: 10px; margin-bottom: 10px;">Padding</p>
+                    </div>
+                    <p style="padding-bottom: 0px; margin-top: 9px;">Border</p>
                 </div>
-                <p style="margin-top: 10px; margin-bottom: 10px;">Padding</p>
+                <p style="margin-top: 0px;margin-bottom: 5px; padding-bottom: 25px; padding-top: 6px;">Margin</p>
             </div>
-            <p style="padding-bottom: 0px; margin-top: 9px;">Border</p>
-        </div>
-        <p style="margin-top: 0px;margin-bottom: 5px; padding-bottom: 25px; padding-top: 6px;">Margin</p>
-    </div>
 
-    <!--Flex Box Model Visual End-->
+            <!--Flex Box Model Visual End-->
 
-    <!--A future version wil be an interactable box model where the values of each property can be changed. But this is probably super advanced and something I'm not even sure is possible with just Javascript, but we'll see.-->
+            <!--A future version wil be an interactable box model where the values of each property can be changed. But this is probably super advanced and something I'm not even sure is possible with just Javascript, but we'll see.-->
 
-    <!--And in the future, have some kind of toggle to show an even more comprehensible + interactive analogy for how the box model works.-->
-    <!--Content is the item you are sending inside of a package to then send over mail-->
-    <!--Padding is exactly padding in this analogy, packing peanuts that are added as needed to fill in the space inside this cardboard box. Although this might fall apart when padding is set to be super big. For border-box, the content will shrink to accomodate the padding value if it exceeds the width of the parent container-->
-    <!--Border is the thickness of this cardboard box-->
-    <!--Margin is a little harder to convey in this, but maybe just say there's like an invisible force (like magnetism) on the outside of the box that says how far away this cardboard box is from other cardboard boxes-->
+            <!--And in the future, have some kind of toggle to show an even more comprehensible + interactive analogy for how the box model works.-->
+            <!--Content is the item you are sending inside of a package to then send over mail-->
+            <!--Padding is exactly padding in this analogy, packing peanuts that are added as needed to fill in the space inside this cardboard box. Although this might fall apart when padding is set to be super big. For border-box, the content will shrink to accomodate the padding value if it exceeds the width of the parent container-->
+            <!--Border is the thickness of this cardboard box-->
+            <!--Margin is a little harder to convey in this, but maybe just say there's like an invisible force (like magnetism) on the outside of the box that says how far away this cardboard box is from other cardboard boxes-->
 
-    <!--Start of flexbox box model properties info things (needs a good font)-->
-    <div class="flexbox-container concept-info">
+            <!--Start of flexbox box model properties info things (needs a good font)-->
+            <div class="flexbox-container concept-info">
 
-        <div class="content">
-            <h2>Content</h2>
-            <ul>
-                <li>The width and height size of a piece of content</li>
-                <ul>
-                    <li>Examples: images, text, video, etc</li>
-                </ul>
-            </ul>
-        </div>
+                <div class="content">
+                    <h2>Content</h2>
+                    <ul>
+                        <li>The width and height size of a piece of content</li>
+                        <ul>
+                            <li>Examples: images, text, video, etc</li>
+                        </ul>
+                    </ul>
+                </div>
 
-        <div class="padding">
-            <h2>Padding</h2>
-            <ul>
-                <li>The space in between the content and the edges of the box (borders)</li>
-                <li>Visualize it like mailing an item in a package</li>
-                <ul>
-                    <li>You have a cardboard box of a specific size (certain length, certain width)</li>
-                    <li>The item to mail is your content (Ex: Wireless Earbuds)</li>
-                    <li>Padding (if you choose to add it) fills in the space inside of the cardboard box, around the wireless earbuds (content)</li>
-                </ul>
-                <li>Put a picture here of the cardboard box visual</li>
-            </ul>
-        </div>
+                <div class="padding">
+                    <h2>Padding</h2>
+                    <ul>
+                        <li>The space in between the content and the edges of the box (borders)</li>
+                        <li>Visualize it like mailing an item in a package</li>
+                        <ul>
+                            <li>You have a cardboard box of a specific size (certain length, certain width)</li>
+                            <li>The item to mail is your content (Ex: Wireless Earbuds)</li>
+                            <li>Padding (if you choose to add it) fills in the space inside of the cardboard box, around the wireless earbuds (content)</li>
+                        </ul>
+                        <li>Put a picture here of the cardboard box visual</li>
+                    </ul>
+                </div>
 
-        <div class="border">
-            <h2>Border</h2>
-            <ul>
-                <li>It's pretty much what it sounds like</li>
-                <li>In CSS, the main three things you can change is the border color, style and thickness</li>
-                <ul>
-                    <li>Examples: Dotted, Solid, 3px, 10px, and any other color you can think of</li>
-                </ul>
-            </ul>
-        </div>
+                <div class="border">
+                    <h2>Border</h2>
+                    <ul>
+                        <li>It's pretty much what it sounds like</li>
+                        <li>In CSS, the main three things you can change is the border color, style and thickness</li>
+                        <ul>
+                            <li>Examples: Dotted, Solid, 3px, 10px, and any other color you can think of</li>
+                        </ul>
+                    </ul>
+                </div>
 
-        <div class="margin">
-            <h2>Margin</h2>
-            <ul>
-                <li>A space you specify that determine how far away OTHER elements on a page are</li>
-                <li>Imagine there's like an invisible force that pushes other elements away a certain amount lol</li>
-            </ul>
-        </div>
-    </div>
-    <!--End of flexbox box model properties info things-->
-
-    <!-- <br> -->
-
-    <h2 class="concept-title">{- . Classes . -}</h2>
-
-    <p>CSS Classes are a way to apply multiple style properties (ex: font size, color, text alignment) to any element on a website.</p>
-    <!--Flexbox to have two different, not too wide, flex items. 
-    The first flex item for HTML, colored light orange, showing how to apply a class to an element in code. 
-    The second flex item for CSS, showing how the .class selector is what defines a class, populates a class with the desired properties-->
-    
-    <div class="flexbox-container concept-info">
-        <div class="html">
-            <p><strong><i>APPLY</i> class(es) to elements in HTML:</strong></p>
-            <div style="background-color: lightsalmon; padding-left: 5px;">
-                <p>&lt; p &gt; 1. Oh to be some digital text. &lt; /p &gt;</p>
-                <p>&lt; p <span style="color: white;">class="blue-red-center" </span> &gt; 2. Oh to be some digital text. &lt; /p &gt;</p>
+                <div class="margin">
+                    <h2>Margin</h2>
+                    <ul>
+                        <li>A space you specify that determine how far away OTHER elements on a page are</li>
+                        <li>Imagine there's like an invisible force that pushes other elements away a certain amount lol</li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <!--End of flexbox box model properties info things-->
 
-        <div style="background-color: rgb(24, 133, 235);">
-            <p><strong><i>DEFINE</i> class(es) in CSS:</strong></p>
-            <div style="background-color: rgb(86, 163, 234); padding-left: 5px;">
-                <p><span style="color: white;">.blue-red-center </span> {</p>
-                <p>border: 3px solid red;</p>
-                <p>color: blue;</p>
-                <p>text-align: center;</p>
-                <p>}</p>
+        <div>
+            <h2 class="concept-title">{- . Classes . -}</h2>
+
+            <p>CSS Classes are a way to apply multiple style properties (ex: font size, color, text alignment) to any element on a website.</p>
+            <!--Flexbox to have two different, not too wide, flex items. 
+            The first flex item for HTML, colored light orange, showing how to apply a class to an element in code. 
+            The second flex item for CSS, showing how the .class selector is what defines a class, populates a class with the desired properties-->
+            
+            <div class="flexbox-container concept-info">
+                <div class="html">
+                    <p><strong><i>APPLY</i> class(es) to elements in HTML:</strong></p>
+                    <div style="background-color: lightsalmon; padding-left: 5px;">
+                        <p>&lt; p &gt; 1. Oh to be some digital text. &lt; /p &gt;</p>
+                        <p>&lt; p <span style="color: white;">class="blue-red-center" </span> &gt; 2. Oh to be some digital text. &lt; /p &gt;</p>
+                    </div>
+                </div>
+
+                <div style="background-color: rgb(24, 133, 235);">
+                    <p><strong><i>DEFINE</i> class(es) in CSS:</strong></p>
+                    <div style="background-color: rgb(86, 163, 234); padding-left: 5px;">
+                        <p><span style="color: white;">.blue-red-center </span> {</p>
+                        <p>border: 3px solid red;</p>
+                        <p>color: blue;</p>
+                        <p>text-align: center;</p>
+                        <p>}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flexbox-container" style="background-color: rgb(203, 203, 203); flex-direction: column; border: 3px solid black; padding-left: 5px;">
+                <h2 style="margin: 5px 6px;">Result</h2>
+
+                <div style="background-color: darkgray; padding-left: 5px;">
+                    <p>1. Oh to be some digital text.</p>
+                    <p style="border: 3px solid red; color: blue; text-align: center;">2. Oh to be some digital text.</p>
+                </div>
+            </div>
+
+            <!--Maybe do a side note to talk about 'div' and 'span' being HTML elements that don't do anything in pure html without css, and are made with the purpose to be used as containers-->
+            <!--Depending on how a class is applied, if applied to an element just like rawlly, it will stretch across the entire line as a block level element would. But put a property like border in a span and it'll only cover the text content-->
+            <!-- <p><span style="border: 3px solid black;">Thanks for the border</span></p> -->
+
+            <!--Also for now, this link will take you back to the home page-->
+            <!--But in the future it will be some kind of expandable pop-up containing the side note I explained earlier-->
+                <h4><a href="index.html">Why is the border so wide?</a></h4>
+
+        </div>
+
+        <!--Consider adding the different types of ways to add properties like in-line, chain, id and all that-->
+        <!--Although that might be a bit too advanced for the purposes of this project-->
+
+        <div>
+            <h2 class="concept-title">: : Display Types : :</h2>
+            <p>The different ways an element(s) can be displayed <i>(wow very descriptive)</i></p>
+
+            <div class="flexbox-container">
+                <div style="background-color: lightgray">
+                    <p style="text-align: center;"><span style="border: 3px solid darkred; background-color: lightcoral;">A ____ element</span></p>
+            <!--Drag and drop the different display types into this paragraph text ^-->
+            <!--Inline is surrounded by CONTENT and the element's content can be changed by user (text)-->
+            <!--Block pushes all the CONTENT out of the way and takes over the entire line no matter the element's content-->
+            <!--Flex makes the current element into a flex container that can hold elements and lay them out in a flexible way, add the ability to add flex items (probably name them something simpler. Make it like [add child element] as like a button)-->
+                </div>
+
+            <!--A beta version of this can have just "A ____ element" in the center with no span styling-->
+            <!--And then you drag 'inline' in the space and then the red border and background color comes on and you also get the definition somewhere-->
+            <!--And then for block it goes all the way, from end to end with the defintion, you can reuse the red border and background color thing-->
+            <!--Flex would be a little bit harder to show but highlight the actual element that acts as a flex container in that red border from before with two or three flex items inside it-->
+            </div>
+
+            <div class="flexbox-container concept-info">
+
+                <div>
+                <p>Inline - Takes up only the horizontal space it needs on the page</p>
+                </div>
+
+                <div>
+                <p>Block - Takes up the ENTIRE width of the page, expanding across the entire line</p>
+                </div>
+
+                <div>
+                <p>Flex - Enables elements to be arranged in a flexible container</p>
+                </div>
+
+                <div>
+                <p>Grid (when I get there)</p>
+                </div>
             </div>
         </div>
+
     </div>
-
-    <div class="flexbox-container" style="background-color: rgb(203, 203, 203); flex-direction: column; border: 3px solid black; padding-left: 5px;">
-        <h2 style="margin: 5px 6px;">Result</h2>
-
-        <div style="background-color: darkgray; padding-left: 5px;">
-            <p>1. Oh to be some digital text.</p>
-            <p style="border: 3px solid red; color: blue; text-align: center;">2. Oh to be some digital text.</p>
-        </div>
-    </div>
-
-    <!--Maybe do a side note to talk about 'div' and 'span' being HTML elements that don't do anything in pure html without css, and are made with the purpose to be used as containers-->
-    <!--Depending on how a class is applied, if applied to an element just like rawlly, it will stretch across the entire line as a block level element would. But put a property like border in a span and it'll only cover the text content-->
-    <!-- <p><span style="border: 3px solid black;">Thanks for the border</span></p> -->
-
-    <!--Also for now, this link will take you back to the home page-->
-    <!--But in the future it will be some kind of expandable pop-up containing the side note I explained earlier-->
-        <h4><a href="index.html">Why is the border so wide?</a></h4>
-
-    <!--Consider adding the different types of ways to add properties like in-line, chain, id and all that-->
-    <!--Although that might be a bit too advanced for the purposes of this project-->
-
-    <h2 class="concept-title">: : Display Types : :</h2>
-    <p>The different ways an element(s) can be displayed <i>(wow very descriptive)</i></p>
-
-    <div class="flexbox-container">
-        <div style="background-color: lightgray">
-            <p style="text-align: center;"><span style="border: 3px solid darkred; background-color: lightcoral;">A ____ element</span></p>
-    <!--Drag and drop the different display types into this paragraph text ^-->
-    <!--Inline is surrounded by CONTENT and the element's content can be changed by user (text)-->
-    <!--Block pushes all the CONTENT out of the way and takes over the entire line no matter the element's content-->
-    <!--Flex makes the current element into a flex container that can hold elements and lay them out in a flexible way, add the ability to add flex items (probably name them something simpler. Make it like [add child element] as like a button)-->
-        </div>
-
-    <!--A beta version of this can have just "A ____ element" in the center with no span styling-->
-    <!--And then you drag 'inline' in the space and then the red border and background color comes on and you also get the definition somewhere-->
-    <!--And then for block it goes all the way, from end to end with the defintion, you can reuse the red border and background color thing-->
-    <!--Flex would be a little bit harder to show but highlight the actual element that acts as a flex container in that red border from before with two or three flex items inside it-->
-    </div>
-
-    <div class="flexbox-container concept-info">
-
-        <div>
-        <p>Inline - Takes up only the horizontal space it needs on the page</p>
-        </div>
-
-        <div>
-        <p>Block - Takes up the ENTIRE width of the page, expanding across the entire line</p>
-        </div>
-
-        <div>
-        <p>Flex - Enables elements to be arranged in a flexible container</p>
-        </div>
-
-        <div>
-        <p>Grid (when I get there)</p>
-        </div>
-    </div>
-
 
 
     <a href="index.html">Home</a>
