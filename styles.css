@@ -19,6 +19,10 @@
     flex: 1;
 }
 
+.flexbox-container .section {
+    border: none;
+}
+
 .html {
     background-color: rgb(236, 98, 49);
 }
