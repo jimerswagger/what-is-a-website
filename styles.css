@@ -2,6 +2,8 @@
     display: flex;
     margin: 10px 20px;
     border-style: none;
+    /* align-content: center; */
+    flex-wrap: wrap;
 }
 
 .flexbox-container.concept-info{
