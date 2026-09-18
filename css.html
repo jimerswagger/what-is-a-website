@@ -229,13 +229,14 @@
 
     </div>
 
-    <div class="flexbox-container" style="justify-content: center;">
-        <div>
+    <!--Doing "style='justify-content: center;' " does not change the text's alignment because it only affects the divs (the flex items of this container) and not the content within the divs-->
+    <div class="flexbox-container">
+        <div style="background-color: grey;">
             <a href="index.html">Home</a>
         </div>
 
-        <div>
-            <a href="javascript.html" style="padding-left: auto;">JavaScript</a>
+        <div style="background-color: #f4e9a1; text-align: right;">
+            <a href="javascript.html">JavaScript</a>
         </div>
     </div>
     
