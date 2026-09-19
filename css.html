@@ -231,13 +231,18 @@
 
     <!--Doing "style='justify-content: center;' " does not change the text's alignment because it only affects the divs (the flex items of this container) and not the content within the divs-->
     <div class="flexbox-container">
-        <div style="background-color: grey;">
-            <a href="index.html">Home</a>
-        </div>
+        <a href="index.html" style="margin-right: auto;">
+            <div style="background-color: grey;">
+                <p>< Home</p>
+                <p></p>
+            </div>
+        </a>
 
-        <div style="background-color: #f4e9a1; text-align: right;">
-            <a href="javascript.html">JavaScript</a>
-        </div>
+        <a href="javascript.html">
+            <div style="background-color: #f4e9a1;">
+                <p>JavaScript ></p>
+            </div>
+        </a>
     </div>
     
 </body>
